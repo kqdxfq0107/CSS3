@@ -1,0 +1,126 @@
+#box{
+	width: 1000px;
+	height: 200px;						/*为啥不给高在img下方会有一个4px的缝隙*/
+	border: 1px solid #008000;
+	border-width: 5px 5px 3px 4px;
+	position: relative;
+	overflow: hidden;
+	margin: 50px auto;
+}
+#box:hover img{
+	animation-play-state: paused;
+}
+img{ 
+	position: absolute;
+}
+img:nth-child(1){
+	animation: 10s move1 linear infinite;
+}
+img:nth-child(2){
+	animation: 10s move11 linear infinite;
+}
+img:nth-child(3){
+	animation: 10s move2 linear infinite;
+}
+img:nth-child(4){
+	animation: 10s move22 linear infinite;
+}
+img:nth-child(5){
+	animation: 10s move3 linear infinite;
+}
+img:nth-child(6){
+	animation: 10s move33 linear infinite;
+}
+img:nth-child(7){
+	animation: 10s move4 linear infinite;
+}
+img:nth-child(8){
+	animation: 10s move44 linear infinite;
+}
+img:nth-child(9){
+	animation: 10s move5 linear infinite;
+}
+img:nth-child(10){
+	animation: 10s move55 linear infinite;
+}
+
+@keyframes move1{
+	0%{
+		right: 0;
+	}
+	100%{
+		right: 1000px;
+	}
+}
+@keyframes move11{
+	0%{
+		right: -1000px;
+	}
+	100%{
+		right: 0;
+	}
+}
+@keyframes move2{
+	0%{
+		right: 200px;
+	}
+	100%{
+		right: 1200px;
+	}
+}
+@keyframes move22{
+	0%{
+		right: -800px;
+	}
+	100%{
+		right: 200px;
+	}
+}
+@keyframes move3{
+	0%{
+		right: 400px;
+	}
+	100%{
+		right: 1400px;
+	}
+}
+@keyframes move33{
+	0%{
+		right: -600px;
+	}
+	100%{
+		right: 400px;
+	}
+}
+@keyframes move4{
+	0%{
+		right: 600px;
+	}
+	100%{
+		right: 1600px;
+	}
+}
+@keyframes move44{
+	0%{
+		right: -400px;
+	}
+	100%{
+		right: 600px;
+	}
+}
+@keyframes move5{
+	0%{
+		right: 800px;
+	}
+	100%{
+		right: 1800px;
+	}
+}
+@keyframes move55{
+	0%{
+		right: -200px;
+	}
+	100%{
+		right: 800px;
+	}
+}
